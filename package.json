@@ -1,0 +1,26 @@
+{
+  "comments": {
+    "dependencies": {
+      "postcss-cli": "/home/francis/go/src/github.com/francisol/PureAb",
+      "postcss-import": "/home/francis/go/src/github.com/francisol/PureAb"
+    },
+    "devDependencies": {
+      "autoprefixer": "/home/francis/go/src/github.com/francisol/PureAb",
+      "daisyui": "/home/francis/go/src/github.com/francisol/PureAb",
+      "postcss": "/home/francis/go/src/github.com/francisol/PureAb",
+      "tailwindcss": "/home/francis/go/src/github.com/francisol/PureAb"
+    }
+  },
+  "dependencies": {
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.23",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  },
+  "name": "myblog",
+  "version": "0.1.0"
+}
