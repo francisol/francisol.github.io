@@ -6,13 +6,13 @@
 title: 思渊
 subtitle: 羁鸟恋旧林，池鱼思故渊
 description: 个人博客
-author: Xie Zhongtao
+author: 兰泽
 language: zh-CN
-timezone:
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://francisol.github.io
+url: https://francisol.github.io
 root: /
 permalink: :category/:title/
 permalink_defaults:
@@ -37,12 +37,19 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+syntax_highlighter: highlight.js
 highlight:
-  enable: true
-  line_number: true
   auto_detect: true
-  tab_replace:
-
+  line_number: true
+  line_threshold: 0
+  tab_replace: ""
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  line_threshold: 0
+  tab_replace: ""
 # Category & Tag
 default_category: pages
 category_map:
@@ -64,46 +71,12 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: maupassant
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: ggit@github.com:francisol/francisol.github.io.git
-  branch: master
-
-theme_config:
-  search: local
-  wordcount: false
-  canvas_nest:
-    enable: true 
-  widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
-    - search
-    - category
-    - tag
-    - recent_posts
-  links:
-    - title: site-nam
-      url: http://www.example1.com/
-  menu:
-    - page: home
-      directory: .
-      icon: fa-home
-    - page: archive
-      directory: archives/
-      icon: fa-archive
-canvas_nest:
-  enable: true 
-widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
-  - search
-  - category
-  - tag
-  - recent_posts
+theme: next
 
 plugin:
 - hexo-generator-feed
 feed:
-type: atom
-path: atom.xml
-limit: 20
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20

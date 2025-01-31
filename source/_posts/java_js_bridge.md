@@ -6,9 +6,10 @@ toc: true
 date: 2016-9-17 22:54:47
 tags:
 - Java
+description: JavaJs连接桥的实现
 ---
 
-# Java与Js调用
+## Java与Js调用
 在Android开发中常用Java代码调用js的情况.这种比较简单
 ```java
 webView..getSettings()..setJavaScriptEnabled(true);
@@ -35,12 +36,12 @@ public class Functions{
 //Js部分
 window.name.function()
 ```
-# 关于连接桥
+## 关于连接桥
 在Js调用Java部分不算是麻烦,但是在Java调用Js时候要把函数名参数等转换为字符串,比较麻烦.因为用过retrofit,对他的简洁很喜欢.于是仿照retrofit,利用Java的动态代理重新封装了一个JavaJs连接桥.
 思路如下:
 利用接口中函数的注解和参数列表保存Js方法的信息,方法名和参数.利用接口中函数的对象进行序列化请求字符串,例如"javascript:showMsg('Hello')"
 
-## 使用方法
+### 使用方法
 TestFunction
 ```java
 //TestFunction
@@ -126,8 +127,8 @@ Html
     }
 </script>
 ```
-## 效果
-![效果](https://xietzt-blog.oss-cn-beijing.aliyuncs.com/blogJavaJsBridge.gif)
+### 效果
+![效果](https://francisol-blog.oss-cn-beijing.aliyuncs.com/posts/blogJavaJsBridge.gif)
 
-# 项目地址
+## 项目地址
 [JavaJs连接桥的实现](https://github.com/francisCN/JsBridge)

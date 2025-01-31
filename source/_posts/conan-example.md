@@ -8,19 +8,19 @@ categories:
 - C++
 description: 在Java开发中,我们有maven做依赖管理,在PHP开发中我们有Composer做管理,Android、iOS、Python、NodeJS等等都有各自的管理工具,但是C/C++没那么幸运了,很晚才出现包管理工具,下面就让我们看看如何使用C/C++的包管理工具.
 ---
-# 前言
+## 前言
 在Java开发中,我们有maven做依赖管理,在PHP开发中我们有Composer做管理,Android、iOS、Python、NodeJS等等都有各自的管理工具,但是C/C++没那么幸运了,很晚才出现包管理工具.
 
 在C/C++开发的时候,尤其是Linux开发.我们需要加入一些第三方的依赖,例如Openssl或者其他的一些库.之前我们或者直接在系统安装开发包;或者从源码编译,然后引用.过程是痛苦的,管理是混乱的.想我这样有不想把系统"搞脏",又不想自己去build,急需一个工具替我进行管理,解放我的双手.
 
-# 工具介绍
+## 工具介绍
 在网上没有一个权威的管理工具,也许是因为C/C++太自由了吧,勉强找到两个工具一个是[conan](https://www.conan.io) 、一个是[biicode](https://github.com/biicode/),但是biicode服务器已经关闭了,代码也是两年前的了,基本是废了,不用考虑.如果有精力的话可以折腾一下它的代码,试着自己搭建一个服务器.
 
 接下来我们就试着用conan来管理我们的项目.
 
-# conan使用
+## conan使用
 
-## 安装
+### 安装
 
 conan是用python写的,所以在安装conan之前要先安装Python,当然*nix系统自带了Python,如果是Windows用户,建议安装Python2.7, py3是异端啊!!! py的安装就不赘述了.
 
@@ -32,7 +32,7 @@ pip install conan
 
 conan推荐用[CMake](https://cmake.org/)组织项目,所以,还需要下载CMake.
 
-## 创建项目
+### 创建项目
 
 用官网给出的Timer例子进行示范,可以通过下面的命令获取项目
 
@@ -50,10 +50,10 @@ git clone https://github.com/memsharded/example-poco-timer.git mytimer
 // and Contributors.
 // SPDX-License-Identifier:     BSL-1.0
 
-#include "Poco/Timer.h"
-#include "Poco/Thread.h"
-#include "Poco/Stopwatch.h"
-#include <iostream>
+##include "Poco/Timer.h"
+##include "Poco/Thread.h"
+##include "Poco/Stopwatch.h"
+##include <iostream>
 
 using Poco::Timer;
 using Poco::TimerCallback;
@@ -108,7 +108,7 @@ add_executable(timer timer.cpp)
 target_link_libraries(timer ${CONAN_LIBS})
 ```
 
-## 编译
+### 编译
 
 在项目根目录新创建一个文件夹进行编译工作
 ```
@@ -141,7 +141,7 @@ $ cmake --build .
 ```
 编译之后,执行`./bin/timer`便大功告成
 
-## 配置
+### 配置
  ### options 
   如果设置库 share=ture,那么该库就会以链接的方式而不打包进可执行文件
   添加 conanfile.txt 如下:
