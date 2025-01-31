@@ -118,7 +118,7 @@ menu_settings:
 
 sidebar:
   # Sidebar position. Available values: left | right
-  position: left
+  position: right
 
   # Sidebar width.
   # Applicable to Muse | Mist and mobile of Pisces | Gemini.
@@ -212,13 +212,13 @@ footer:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
     name: fa fa-heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
     color: "#ff0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   # Set to `false` to disable the copyright statement.
-  copyright:
+  copyright: 兰泽.    The favicon is  <a target="_blank" href="https://icons8.com/icon/24009/google-code">Google Code</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
   # Powered by Hexo & NexT
   powered: true
