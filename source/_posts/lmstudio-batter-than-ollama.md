@@ -49,4 +49,4 @@ description: Ollama作为当前流行的大语言模型部署工具，但其以�
 
 
 [^1]: [在 Intel GPU 上使用 IPEX-LLM 运行 Ollama](https://github.com/intel/ipex-llm/blob/main/docs/mddocs/Quickstart/ollama_quickstart.zh-CN.md).
-[^2]: [让Ollama拥抱Intel Arc显卡：一键部署大模型工具实践](./ollama-for-intel.md).
+[^2]: [让Ollama拥抱Intel Arc显卡：一键部署大模型工具实践](https://francisol.github.io/LLM/ollama-for-intel/).
