@@ -6,6 +6,11 @@ tags:
 - LLM
 - lmstudio
 - 大语言模型
+- 大模型
+- vulkan
+- intel
+- 因特尔
+- intel arc
 categories:
 - LLM
 description: Ollama作为当前流行的大语言模型部署工具，但其以命令行方式运行需要搭配其他UI工具使用；并且对非N卡设备并不友好，虽然针对Intel显卡有成熟的解决方案，但是使用起来仍然复杂。而LM Studio支持多种 GPU，包括 AMD 和 Intel 的显卡，这使得即使不拥有 NVIDIA 设备的用户也能充分利用其硬件资源来运行复杂的 AI 模型。
@@ -14,7 +19,7 @@ description: Ollama作为当前流行的大语言模型部署工具，但其以�
 [Ollama](https://ollama.com/)作为当前流行的大语言模型部署工具，但其以命令行方式运行需要搭配其他UI工具使用；并且对非N卡设备并不友好，虽然针对Intel显卡有成熟的解决方案[^1][^2]，但是使用起来仍然复杂。而[LM Studio](https://lmstudio.ai/)支持多种 GPU，包括 AMD 和 Intel 的显卡，这使得即使不拥有 NVIDIA 设备的用户也能充分利用其硬件资源来运行复杂的 AI 模型。
 
 相比 Ollama, LM Studio 的优势如下：
-- 利用 vulkan 适配多种GPU
+- 利用 vulkan 适配多种GPU(AMD、Intel、Intel Arc、NVIDIA等等)
 - 自带图形化界面，上手简单
 - 选项功能丰富
 - 支持大模型丰富，可以运行[huggingface](https://huggingface.co/)上gguf格式的LLM模型文件
