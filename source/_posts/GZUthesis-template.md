@@ -1,6 +1,6 @@
 ---
 title: GZUthesis-template：贵州大学学位论文 LaTeX 模板使用指南
-date: 2025-07-09 15:39:12 -0700
+date: 2025-07-09 17:39:12
 tags:
   - LaTeX
   - 学位论文
