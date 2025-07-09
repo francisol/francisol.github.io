@@ -1,0 +1,6 @@
+{% if page.keywords %}
+    <meta name="keywords" content="{{page.keywords }},{{config.keywords }}">
+
+    {% elif config.keywords %}
+    <meta name="keywords" content="{{config.keywords }}">
+{% endif %}

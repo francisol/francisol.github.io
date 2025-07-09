@@ -1,5 +1,5 @@
 ---
-title: GZUthesis：贵州大学学位论文 LaTeX 模板使用指南
+title: GZUthesis-template：贵州大学学位论文 LaTeX 模板使用指南
 date: 2025-07-09 15:39:12 -0700
 tags:
   - LaTeX
@@ -17,7 +17,7 @@ keywords:
   - 博士
   - 研究生
 categories:
-  - LaTeX模板
+  - LaTeX
 description: GZUthesis-template 是专为贵州大学硕士博士研究生设计的LaTeX学位论文模板，严格遵循2022年官方格式要求，提供多平台兼容和灵活的输出选项，助您高效规范地完成论文排版。
 ---
 
