@@ -29,8 +29,7 @@ keywords: ["SAT求解器", "命令行工具", "Rust开发", "Minisat","Glucose"]
 ## 安装方法
 
 ### 前提条件
-
- `satgalaxy-cli` 构建需要一下环境，请自行安装：
+ 构建 `satgalaxy-cli`需要以下环境，请自行安装：
 
 
 * **Rust 工具链**： ≥1.65.0。
@@ -65,7 +64,7 @@ cargo build --release
 
     安装后可在终端直接使用`satgalaxy`命令， 可执行文件将放置在 Cargo bin 目录 (通常是 `~/.cargo/bin`) 中。
 
-    **注意**：如果您使用的是 Windows，可能需要将 `~/.cargo/bin` 目录添加到您的 PATH 环境变量中。
+    **注意**： Windows系统可能需要将 `~/.cargo/bin` 目录添加到 PATH 环境变量中。
 
 ---
 
@@ -114,7 +113,7 @@ SAT
 |Simplification time|11.755µs|问题简化时间（CPU 时间）||
 |Solve time|7.856µs|核心求解时间（CPU 时间）||
 |Total time|90.961µs|总处理时间（CPU 时间）||
-|Run time|104.244µs|实际运行时间（实际运行时间）||
+|Run time|104.244µs|实际运行时间||
 |Memory|14 MiB|内存使用量|
 |求解结果|SATISFIABLE|SAT/UNSAT结果|
 |解向量|1 -2 0|变量赋值序列|
